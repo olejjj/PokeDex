@@ -10,4 +10,66 @@ body {
     overflow-x: hidden;
     height: 100vh;
     font-family: "Roboto Mono", monospace;
+    background-image: url("pikachu.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 100vh;
+}
+
+.searchBar-container {
+    display: grid;
+    height: 60%;
+    width: auto;
+    /*border: #282828 2px solid;*/
+    grid-template-areas:
+            "input button"
+            "stats stats";
+
+    grid-template-rows: auto 1fr;
+
+}
+
+.pokeInput {
+    border: none;
+    font-size: 1.2rem;
+    grid-area: input;
+    border-radius: 4px;
+    font-weight: bold;
+    padding-left: 20px;
+    outline: none;
+
+}
+
+.pokeInput::placeholder {
+    opacity: 0.5;
+}
+
+.submit {
+    grid-area: button;
+    padding: 16px 32px;
+    cursor: pointer;
+    color: #F8F8F8;
+    background-color: #282828;
+    border-color: #282828;
+    border-width: 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+    border-radius: 4px;
+    z-index: 1;
+    margin-left: 10px;
+}
+
+.submit:hover {
+    background-color: #1A3A50;
+    border-color: #68B0E0;
+    transition: background-color 0.2s;
 }
