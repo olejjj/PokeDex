@@ -38,7 +38,7 @@ body {
 
 }
 
-.pokeInput {
+#pokeInput {
     border: none;
     font-size: 1.2rem;
     grid-area: input;
@@ -49,11 +49,11 @@ body {
 
 }
 
-.pokeInput::placeholder {
+#pokeInput::placeholder {
     opacity: 0.5;
 }
 
-.submit {
+#submit {
     grid-area: button;
     padding: 16px 32px;
     cursor: pointer;
@@ -68,8 +68,28 @@ body {
     margin-left: 10px;
 }
 
-.submit:hover {
+#submit:hover {
     background-color: #1A3A50;
     border-color: #68B0E0;
     transition: background-color 0.2s;
+}
+
+.stats-container {
+    display: grid;
+    grid-area: stats;
+    border: 2px solid black;
+}
+
+#pokeName {
+    color: #F8F8F8;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+
+#pokeImg {
+    width: 50%;
+    height: auto;
+    border: 2px red solid;
 }
