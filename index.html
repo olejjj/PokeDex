@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <title>PodeDex</title>
 </head>
 <body>
@@ -11,8 +12,30 @@
       <input id="pokeInput" type="text" placeholder="Pokemon name...">
       <button id="submit">Search</button>
       <div class="stats-container">
-        <div id="pokeName">Pikachu</div>
-        <img id="pokeImg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="pikachu">
+        <h2 id="pokeName">Pikachu</h2>
+          <div id="images">
+              <img class="pokeImg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="pikachu from front">
+              <img class="pokeImg" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/25.png" alt="pikachu from back">
+          </div>
+          <table>
+              <tr>
+                  <td id="type"><b>type</b></td>
+                  <td>electric</td>
+              </tr>
+              <tr>
+                  <td id="height"><b>height</b></td>
+                  <td>4</td>
+              </tr>
+              <tr>
+                  <td id="weight"><b>weight</b></td>
+                  <td>60</td>
+              </tr>
+              <tr>
+                  <td id="gender"><b>gender rate</b></td>
+                  <td>50% <i class="fa-solid fa-person" style="color: darkblue"></i> / 50% <i class="fa-solid fa-person-dress" style="color: pink"></i></td>
+              </tr>
+
+          </table>
       </div>
     </div>
   </div>
